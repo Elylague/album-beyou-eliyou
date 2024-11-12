@@ -1,0 +1,488 @@
+body {
+  margin: 0;
+  font-size: 15pt;
+}
+
+h3 {
+
+  text-align: center;
+  margin: 0;
+  padding: 5px;
+
+  background: linear-gradient(45deg, rgba(211, 28, 154, 1), rgba(43, 52, 36, 1), rgba(211, 28, 28, 1), rgba(111, 28, 211, 1), rgba(28, 211, 113, 1), rgba(80, 211, 28, 1));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  font-family: serif;
+
+}
+
+.bague img {
+
+  width: 100%;
+  min-height: 250px;
+}
+
+/* toutes mes sections ont une hauteur min*/
+
+section {
+  margin: 2px;
+  border-radius: 10px;
+  width: 98%;
+  min-height: 450px;
+
+
+  /*
+  animation-name: smoothWith;
+  animation-duration: 1s;
+  animation-delay: 0.5s;
+  animation-timing-function: ease;
+  */
+}
+
+
+/* toutes mes div en position relative*/
+
+section div {
+  width: 100%;
+  min-height:inherit;
+  /*
+  animation-name: maraineAnimation;
+  animation-duration: 2s;
+  animation-timing-function: ease;
+  
+*/
+
+
+}
+
+
+/* arrondi tous mes images */
+
+section div img[src] {
+  border-radius: 10px;
+  width: 100%;
+  /*  height: initial;*/
+  border-top-right-radius: 100px;
+  border-bottom-left-radius: 100px;
+  margin-top: 10px;
+  
+
+  /*
+  animation-name: smoothWith;
+  animation-duration: 1s;
+  animation-delay: 1s;
+  animation-timing-function: ease;
+  */
+  /*
+  position: absolute;
+  top: 8,px;
+  left: 20px;
+  */
+}
+
+
+
+
+
+
+section.section-friend {
+
+  background: linear-gradient(-45deg, rgba(76, 225, 139, 0.95), rgba(209, 197, 20, 0), rgba(20, 209, 118, 1), rgba(209, 191, 20, 0), rgba(209, 191, 20, 1), rgba(209, 191, 20, 0), rgba(20, 63, 209, 0.85), rgba(20, 46, 209, 0), rgba(20, 46, 209, 0.99));
+
+
+
+}
+
+
+.animation {
+
+  animation-name: smoothWith;
+  animation-duration: 3s;
+  animation-delay: 1s;
+
+  animation-timing-function: ease;
+
+}
+
+
+
+
+.hide-images {
+  display: none;
+  
+}
+
+.see-image-animation{
+  display: block;
+  opacity: 1;
+  animation-name: seeMaraine;
+  animation-duration: 2s;
+  animation-timing-function: ease;
+}
+
+.hide-image-animation{
+  display: none;
+  opacity: 1;
+  animation-name: hideMaraine;
+  animation-duration: 2s;
+  animation-timing-function: ease;
+}
+
+@keyframes smoothWith {
+  0% {
+    height: 0;
+  }
+
+
+
+  100% {
+
+    height: 267px;
+  }
+
+
+}
+
+/*
+@keyframes closeAlbum{
+  0%{
+    height:initial;
+  }
+  
+  
+
+  100%{
+    
+    height:0;
+  }
+  
+
+}
+
+*/
+
+
+
+
+section.section-maraine {
+  background: linear-gradient(180deg, rgba(43, 219, 159, 1), rgba(184, 219, 43, 1), rgba(219, 43, 121, 1), rgba(173, 43, 219, 1), rgba(43, 123, 219, 1), rgba(43, 219, 134, 1), rgba(142, 130, 82, 1));
+ 
+  
+
+}
+
+
+
+@keyframes seeMaraine{
+  
+  0%{
+    opacity: 0;
+    display: none;
+    
+  }
+  100%{
+   opacity: 1;
+   display: block;
+  }
+  
+  
+}
+
+
+
+@keyframes hideMaraine{
+
+  0% {
+    opacity: 1;
+    display: block;
+
+  }
+
+  100% {
+    opacity: 0;
+    display: none;
+  }
+
+
+}
+
+/* the background linear-gradient*/
+
+section.section-beyou-eliyou {
+  background: linear-gradient(40deg, blue, red, yellow);
+
+
+
+}
+
+section.section-beyou {
+  background: linear-gradient(-60deg, rgba(43, 58, 219, 1), rgba(43, 219, 151, 1), rgba(219, 43, 201, 1), rgba(219, 122, 43, 1), rgba(161, 219, 43, 1));
+
+}
+
+section.section-parain {
+  background: linear-gradient(45deg, rgba(32, 27, 27, 0.98), rgba(159, 133, 133, 0), rgba(23, 13, 13, 1), rgba(171, 92, 92, 0), rgba(209, 20, 136, 0.93), rgba(209, 20, 136, 0.02), rgba(20, 209, 162, 0.95));
+
+
+
+}
+
+section.section-eliyou {
+  background: linear-gradient(45deg, rgba(43, 239, 255, 0.91), rgba(255, 255, 0, 1), rgba(43, 219, 151, 0), rgba(255, 255, 0, 1), rgba(219, 122, 43, 0), rgba(255, 255, 0, 1), rgba(161, 219, 43, 0), rgba(255, 219, 43, 0));
+
+}
+
+
+section.section-friend div.friend {
+  position: relative;
+
+
+}
+
+section div button.bouton {
+  height: 30px;
+  position: relative;
+
+  left: 15px;
+  bottom: 15px;
+}
+
+
+/* family animation*/
+
+
+section.section-family {
+  background: linear-gradient(-45deg, rgba(18, 179, 226, 0.5), rgba(226, 18, 108, 0.5), rgba(110, 226, 18, 0.5), rgba(226, 120, 18, 0.5));
+  width: 98vw;
+  min-height: 300px;
+
+
+
+}
+
+section.section-family div {
+  position: relative;
+
+}
+
+/*
+.image-family{
+  position: relative;
+  left: 0;
+  animation-name: close1, close2;
+  animation-duration: 2s;
+  animation-timing-function: ease;
+}
+*/
+.image-family-2 {
+  position: relative;
+  top: -270px;
+
+  animation-name: close2;
+  animation-duration: 2s;
+  animation-timing-function: ease;
+
+}
+
+
+
+.image-family-3 {
+  position: relative;
+  top: -550px;
+
+  animation-name: close3;
+  animation-duration: 2s;
+  animation-timing-function: ease;
+
+}
+
+
+
+.second-family-animation {
+  position: relative;
+  top: 0;
+  animation-name: secondFamily, thirdFamily;
+  animation-duration: 2s;
+
+  animation-timing-function: ease;
+
+}
+
+
+/*
+.third-family-animation {
+  position: relative;
+  top: 0;
+  animation-name: thirdFamily;
+  animation-duration: 2s;
+  animation-timing-function: ease;
+
+}
+*/
+
+
+
+
+@keyframes close2 {
+
+  0% {
+    position: relative;
+    top: 0;
+    /*  transform: translateY(0);*/
+  }
+
+  100% {
+    position: relative;
+    top: -270px;
+    /* transform: translateY(80px);*/
+  }
+
+
+}
+
+
+@keyframes close3 {
+
+  0% {
+    position: relative;
+    top: 0;
+    /*  transform: translateY(0);*/
+  }
+
+  100% {
+    position: relative;
+    top: -550px;
+    /* transform: translateY(80px);*/
+  }
+
+
+}
+
+
+
+
+
+@keyframes secondFamily {
+
+  0% {
+    position: relative;
+    top: -270px;
+    /*  transform: translateY(0);*/
+  }
+
+  100% {
+    position: relative;
+    top: 0;
+    /* transform: translateY(80px);*/
+  }
+
+
+}
+
+@keyframes thirdFamily {
+
+  0% {
+    position: relative;
+    top: -550;
+    /*  transform: translateY(0);*/
+  }
+
+  100% {
+    position: relative;
+    top: 0px;
+    /* transform: translateY(80px);*/
+  }
+
+}
+
+button.bouton-family {
+  position: relative;
+  left: 15px;
+  bottom: 40px;
+}
+
+
+/* ############## ma maraine ########## */
+
+
+
+
+
+/*
+section.section-eliyou div{
+  margin-top: 100px;
+}
+*/
+
+/* les amis */
+
+/*
+section.section-friend div.friend{
+  background-color: rgba(43, 239, 255, 0.91);
+ width:100%;
+  height: 500px;
+  position: relative;
+  z-index: 4;
+  
+  
+}
+
+
+section div.friend img[src]{
+  position: absolute;
+ 
+  
+}
+
+
+
+
+section div.family{
+  position: relative;
+}
+
+section div.family img[src]{
+  position: absolute;
+  
+}
+
+
+
+section div.maraine {
+  position: relative;
+}
+
+section div.maraine img[src] {
+  position: absolute;
+
+}
+
+
+
+section div.beyou-eliyou {
+  position: relative;
+}
+
+section div.beyou-eliyou img[src] {
+  position: absolute;
+
+}
+
+
+section div.beyou {
+  position: relative;
+}
+
+section div.beyou img[src] {
+  position: absolute;
+
+}
+*/
+/* .............. */
+/*
+section div{
+  padding: 60px auto;
+
+}
+*/
