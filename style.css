@@ -29,15 +29,10 @@ section {
   margin: 2px;
   border-radius: 10px;
   width: 98%;
-  min-height: 450px;
+  min-height: 600px;
 
 
-  /*
-  animation-name: smoothWith;
-  animation-duration: 1s;
-  animation-delay: 0.5s;
-  animation-timing-function: ease;
-  */
+
 }
 
 
@@ -46,12 +41,6 @@ section {
 section div {
   width: 100%;
   min-height:inherit;
-  /*
-  animation-name: maraineAnimation;
-  animation-duration: 2s;
-  animation-timing-function: ease;
-  
-*/
 
 
 }
@@ -68,17 +57,7 @@ section div img[src] {
   margin-top: 10px;
   
 
-  /*
-  animation-name: smoothWith;
-  animation-duration: 1s;
-  animation-delay: 1s;
-  animation-timing-function: ease;
-  */
-  /*
-  position: absolute;
-  top: 8,px;
-  left: 20px;
-  */
+
 }
 
 
@@ -144,23 +123,6 @@ section.section-friend {
 
 }
 
-/*
-@keyframes closeAlbum{
-  0%{
-    height:initial;
-  }
-  
-  
-
-  100%{
-    
-    height:0;
-  }
-  
-
-}
-
-*/
 
 
 
@@ -244,7 +206,7 @@ section div button.bouton {
   height: 30px;
   position: relative;
 
-  left: 15px;
+  left: 5px;
   bottom: 15px;
 }
 
@@ -263,18 +225,11 @@ section.section-family {
 
 section.section-family div {
   position: relative;
+  
 
 }
 
-/*
-.image-family{
-  position: relative;
-  left: 0;
-  animation-name: close1, close2;
-  animation-duration: 2s;
-  animation-timing-function: ease;
-}
-*/
+
 .image-family-2 {
   position: relative;
   top: -270px;
@@ -310,16 +265,6 @@ section.section-family div {
 }
 
 
-/*
-.third-family-animation {
-  position: relative;
-  top: 0;
-  animation-name: thirdFamily;
-  animation-duration: 2s;
-  animation-timing-function: ease;
-
-}
-*/
 
 
 
@@ -396,10 +341,24 @@ section.section-family div {
 
 }
 
+/*
 button.bouton-family {
   position: relative;
   left: 15px;
   bottom: 40px;
+}
+*/
+section div button.bouton {
+  width: 150px;
+  height: 40px;
+  border-radius: 10px;
+  margin: 10px auto;
+  font-style: bold;
+  font-size: 20px;
+  position: relative;
+  left: 140px;
+  bottom: 0;
+  
 }
 
 

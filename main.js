@@ -13,6 +13,9 @@ const boutonMaraine = document.querySelector('section div.maraine .bouton-marain
 
 const imagesBeyouEliyou = document.querySelectorAll('section div.beyou-eliyou img');
 const boutonBeyouEliyou = document.querySelector('section div.beyou-eliyou .bouton-beyou-eliyou');
+// my beyou
+const imagesBeyou = document.querySelectorAll('section div.beyou img');
+const boutonBeyou = document.querySelector('section div.beyou .bouton-beyou');
 
 
 boutonFriend.addEventListener('click', (event) =>{
@@ -27,13 +30,13 @@ boutonFriend.addEventListener('click', (event) =>{
   
       imagesFriend[j].classList.remove('see-image-animation');
       imagesFriend[j].classList.add('hide-image-animation');
-  
+      event.target.textContent="voir plus"
     } else {
       console.log('second block')
-  
+      
       imagesFriend[j].classList.remove('hide-image-animation');
       imagesFriend[j].classList.add('see-image-animation');
-  
+       event.target.textContent="voir moins"
     }
   
   
@@ -79,16 +82,16 @@ boutonMaraine.addEventListener('click', (event) =>{
   if (imagesMaraine[j].classList.contains('see-image-animation')) {
   
  console.log('maraine')
-  
+   //event.target.textContent="voir moins"
    imagesMaraine[j].classList.remove('see-image-animation');
    imagesMaraine[j].classList.add('hide-image-animation');
-   
+   event.target.textContent="voir plus"
   } else {
     console.log('second block')
     
   imagesMaraine[j].classList.remove('hide-image-animation');
   imagesMaraine[j].classList.add('see-image-animation');
-  
+  event.target.textContent="voir moins"
   }
 
 
@@ -115,13 +118,13 @@ boutonBeyouEliyou.addEventListener('click', (event) =>{
   
    imagesBeyouEliyou[k].classList.remove('see-image-animation');
    imagesBeyouEliyou[k].classList.add('hide-image-animation');
-   
+   event.target.textContent="voir plus"
   } else {
     console.log('second block')
     
   imagesBeyouEliyou[k].classList.remove('hide-image-animation');
   imagesBeyouEliyou[k].classList.add('see-image-animation');
-  
+  event.target.textContent="voir moins"
   }
 
 
@@ -132,6 +135,42 @@ boutonBeyouEliyou.addEventListener('click', (event) =>{
   
 } )
 
+
+
+// create generator function 
+
+function *names() {
+  yield 'Eliyou';
+  yield 'Beyou';
+  yield 'stephy'
+
+}
+
+let  persons = names()
+
+boutonBeyou.addEventListener('click', (event) =>{
+  
+let personsName =  persons.next().value;
+
+
+   console.log('Personnes: ',personsName)
+    
+  
+  
+  
+  /*
+    for (let  a = 1; a<imagesBeyou.length; a++) {
+
+console.log('my beyou')
+
+  
+  
+
+
+  }
+  */
+  
+} )
 
 
 
