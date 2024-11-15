@@ -139,23 +139,32 @@ boutonBeyouEliyou.addEventListener('click', (event) =>{
 
 // create generator function 
 
-function *names() {
-  yield 'Eliyou';
-  yield 'Beyou';
-  yield 'stephy'
+function *imagesElement() {
+  yield imagesBeyou[0];
+  yield imagesBeyou[1];
+  yield imagesBeyou[2];
 
 }
 
-let  persons = names()
+function *callEmagesElement() {
+  while (true) {
+    yield* imagesElement();
+  
+  }
+}
 
+
+let  persons = callEmagesElement()
+let zindex = 1
 boutonBeyou.addEventListener('click', (event) =>{
-  
+   zindex=zindex+3;
+ // console.log(zindex)
 let personsName =  persons.next().value;
-
-
-   console.log('Personnes: ',personsName)
-    
-  
+//const style=imagesBeyou[0].style
+  // console.log('Personnes: ',personsName)
+   personsName.style.position="absolute"
+   personsName.style.zIndex=zindex;
+ // console.log('imagesBeyou', imagesBeyou[0].style)
   
   
   /*
