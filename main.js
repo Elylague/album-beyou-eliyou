@@ -60,9 +60,9 @@ boutonFamily.addEventListener('click', (event) => {
   
   for (let i = 1; i < imagesFamily.length; i++) {
    
-    imagesFamily[i].classList.toggle('second-family-animation')
+    imagesFamily[i].classList.toggle(listClass[i])
   // imagesFamily[i].classList.toggle('hide-image-animation')
-    
+  //  console.log('image family',imagesFamily[i])
     // Tab to edit
   }
   

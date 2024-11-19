@@ -3,6 +3,54 @@ body {
   font-size: 15pt;
 }
 
+p{
+  text-align: center;
+  color:rgba(38, 213, 222, 0.7);
+  font-size: 20px;
+  font-family: serif;
+  font-weight: bold;
+  animation-name: noceDeCotonUp;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-delay: 0.5s;
+  animation-iteration-count:infinite;
+  
+}
+
+@keyframes noceDeCotonUp {
+  0%{
+    transform: translateY(0) 
+  
+  }
+  15%{
+    transform: translateX(-100px) rotate(35deg);;
+  }
+  
+  25%{
+    transform:translate(-200,-200px) rotate(35deg) scale(1,8)  ;
+  }
+  50%{
+      transform: translateY(-260px) rotate(-35deg)
+  }
+  75%{
+    
+    transform:translate(100px) rotate(-35deg)
+  }
+  
+    
+  100%{
+    font-size: 20px;
+    transform:translateY(0) rotate(0);
+  }
+  
+}
+
+
+
+div.bague p span{
+  color: rgba(255, 255, 255, 1);
+}
+
 h3 {
 
   text-align: center;
@@ -21,12 +69,13 @@ h3 {
 
   width: 100%;
   min-height: 250px;
+  
 }
 
 /* toutes mes sections ont une hauteur min*/
 
 section {
-  margin: 2px;
+  
   border-radius: 10px;
   width: 98%;
   min-height: 700px;
@@ -55,6 +104,7 @@ section div img[src] {
   border-top-right-radius: 100px;
   border-bottom-left-radius: 100px;
   margin-top: 10px;
+  transition: all ease 2s;
   
 
 
@@ -72,7 +122,7 @@ section.section-friend {
 
 
 }
-
+/*
 
 .animation {
 
@@ -84,7 +134,7 @@ section.section-friend {
 
 }
 
-
+*/
 
 
 .hide-images {
@@ -108,6 +158,8 @@ section.section-friend {
   animation-timing-function: ease;
 }
 
+
+/*
 @keyframes smoothWith {
   0% {
     height: 0;
@@ -123,7 +175,7 @@ section.section-friend {
 
 }
 
-
+*/
 
 
 
@@ -219,121 +271,19 @@ section.section-family {
 
 }
 
-section.section-family div {
-  position: relative;
-  
-
-}
 
 
 .image-family-2 {
-  position: relative;
-  top: -270px;
-
-  animation-name: close2;
-  animation-duration: 2s;
-  animation-timing-function: ease;
+  transform: translateY(-270px);
+  transition: all ease 2s;
 
 }
 
 
 
 .image-family-3 {
-  position: relative;
-  top: -550px;
-
-  animation-name: close3;
-  animation-duration: 2s;
-  animation-timing-function: ease;
-
-}
-
-
-
-.second-family-animation {
-  position: relative;
-  top: 0;
-  animation-name: secondFamily, thirdFamily;
-  animation-duration: 2s;
-
-  animation-timing-function: ease;
-
-}
-
-
-
-
-
-
-@keyframes close2 {
-
-  0% {
-    position: relative;
-    top: 0;
-    /*  transform: translateY(0);*/
-  }
-
-  100% {
-    position: relative;
-    top: -270px;
-    /* transform: translateY(80px);*/
-  }
-
-
-}
-
-
-@keyframes close3 {
-
-  0% {
-    position: relative;
-    top: 0;
-    /*  transform: translateY(0);*/
-  }
-
-  100% {
-    position: relative;
-    top: -550px;
-    /* transform: translateY(80px);*/
-  }
-
-
-}
-
-
-
-
-
-@keyframes secondFamily {
-
-  0% {
-    position: relative;
-    top: -290px;
-    /*  transform: translateY(0);*/
-  }
-
-  100% {
-    position: relative;
-    top: 0;
-    /* transform: translateY(80px);*/
-  }
-
-
-}
-
-@keyframes thirdFamily {
-
-  0% {
-    position: relative;
-    top: -570;
-    /*  transform: translateY(0);*/
-  }
-
-  100% {
-    position: relative;
-    top: 0px;
-    /* transform: translateY(80px);*/
-  }
+  transform: translateY(-550px);
+  transition: all ease 2s;
 
 }
 
