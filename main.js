@@ -183,6 +183,6 @@ console.log('my beyou')
 
 
 
-
+console.log(navigator.deviceMemory)
 
 
