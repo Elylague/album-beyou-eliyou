@@ -1,4 +1,4 @@
-console.log('Hello World!');
+import './style.css';
 // friends
 const imagesFriend = document.querySelectorAll('section div.friend img'); 
 const boutonFriend = document.querySelector('section div.friend .bouton'); 
