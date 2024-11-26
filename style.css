@@ -324,16 +324,18 @@ section div button.bouton {
   width: 150px;
   height: 40px;
   border-radius: 10px;
-  margin: 10px auto;
-
+ /* margin: 10px auto;*/
   font-weight: bold;
   font-size: 20px;
-/*
-  position: relative;
+ /* position: relative;
   left: 140px;
   bottom: 0;
   */
-  
+}
+
+button:not(.bouton-family){
+  color: lightseagreen;
+  margin-top: 50px;
 }
 
 
@@ -343,15 +345,16 @@ section div button.bouton-beyou{
   width: 150px;
   height: 40px;
   border-radius: 10px;
-  margin: 10px auto;
-  font-style: bold;
+  /*margin: 10px auto;*/
+  font-weight: bold;
   font-size: 20px;
-  
+  margin-top: auto;
+  /*
   position: absolute;
   left: 140px;
   bottom: 0;
   z-index: 5;
-  
+  */
 }
 
 /* ############## ma maraine ########## */
