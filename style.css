@@ -3,6 +3,17 @@ body {
   font-size: 15pt;
 }
 
+
+/* flexbox */
+
+section div.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+}
+
 p{
   text-align: center;
   color:rgba(38, 213, 222, 0.7);
@@ -314,13 +325,17 @@ section div button.bouton {
   height: 40px;
   border-radius: 10px;
   margin: 10px auto;
-  font-style: bold;
+
+  font-weight: bold;
   font-size: 20px;
+/*
   position: relative;
   left: 140px;
   bottom: 0;
+  */
   
 }
+
 
 
 
@@ -331,6 +346,7 @@ section div button.bouton-beyou{
   margin: 10px auto;
   font-style: bold;
   font-size: 20px;
+  
   position: absolute;
   left: 140px;
   bottom: 0;
