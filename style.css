@@ -125,9 +125,6 @@ section div img[src] {
 
 
 
-
-
-
 section.section-friend {
 
   background: linear-gradient(-45deg, rgba(76, 225, 139, 0.95), rgba(209, 197, 20, 0), rgba(20, 209, 118, 1), rgba(209, 191, 20, 0), rgba(209, 191, 20, 1), rgba(209, 191, 20, 0), rgba(20, 63, 209, 0.85), rgba(20, 46, 209, 0), rgba(20, 46, 209, 0.99));
@@ -208,15 +205,11 @@ section.section-maraine {
 section.section-beyou-eliyou {
   background: linear-gradient(40deg, blue, red, yellow);
 
-
-
 }
 
 
 section.section-parain {
   background: linear-gradient(45deg, rgba(32, 27, 27, 0.98), rgba(159, 133, 133, 0), rgba(23, 13, 13, 1), rgba(171, 92, 92, 0), rgba(209, 20, 136, 0.93), rgba(209, 20, 136, 0.02), rgba(20, 209, 162, 0.95));
-
-
 
 }
 
@@ -232,13 +225,6 @@ section.section-friend div.friend {
 
 }
 
-section div button.bouton {
-  height: 30px;
-  position: relative;
-
-  left: 5px;
-  bottom: 15px;
-}
 
 
 /* family animation*/
@@ -248,8 +234,6 @@ section.section-family {
   background: linear-gradient(-45deg, rgba(18, 179, 226, 0.5), rgba(226, 18, 108, 0.5), rgba(110, 226, 18, 0.5), rgba(226, 120, 18, 0.5));
   width: 98vw;
   min-height: 300px;
-
-
 
 }
 
@@ -268,7 +252,6 @@ section.section-family {
   transition: all ease 2s;
 
 }
-
 
 
 /* ====== my Beyou ===== */
@@ -294,13 +277,9 @@ section div button.bouton {
   width: 150px;
   height: 40px;
   border-radius: 10px;
- /* margin: 10px auto;*/
   font-weight: bold;
   font-size: 20px;
- /* position: relative;
-  left: 140px;
-  bottom: 0;
-  */
+
 }
 
 button:not(.bouton-family){
@@ -315,16 +294,10 @@ section div button.bouton-beyou{
   width: 150px;
   height: 40px;
   border-radius: 10px;
-  /*margin: 10px auto;*/
   font-weight: bold;
   font-size: 20px;
   margin-top: auto;
-  /*
-  position: absolute;
-  left: 140px;
-  bottom: 0;
-  z-index: 5;
-  */
+
 }
 
 /* ############## ma maraine ########## */
