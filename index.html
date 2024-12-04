@@ -7,21 +7,39 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>Album: Beyou et Eliyou</title>
- <!-- 
- <link rel="stylesheet" href="style.css">
- -->
+
+  <link rel="stylesheet" href="src/style.css">
+
 </head>
 
 <body>
   <header>
-    <div class="bague">
-      <img src="images/bague.webp" alt="bague de fiançaille">
-     <p class="noce-de-coton">Joyeuses noces de <span>coton</span></p>
+    <div class="container-header">
+      <h1>Beyou | Eliyou</h1>
+       <p class="noce-de-coton">Joyeuses noces de <span>coton</span></p>
+      <nav class="nav-bar">
+        <ul>
+          <li><a data-section="section-friend" href="#">Amis</a></li>
+          <li><a data-section="section-family" href="#">Famille</a></li>
+          <li><a data-section="section-maraine" href="#">Maraine</a></li>
+          <li><a class="active" data-section="section-beyou-eliyou" href="#">Beyou et Eliyou</a></li>
+          <li><a data-section="section-beyou" href="#">Beyou</a></li>
+          <li><a data-section="section-eliyou" href="#">Eliyou</a></li>
+          <li><a data-section="section-parain" href="#">Parain</a></li>
+        </ul>
+      </nav>
+
     </div>
+
 
   </header>
   <main>
-    <section class="section-friend">
+    <div class="bague">
+      <img src="images/bague.webp" alt="bague de fiançaille">
+     
+    </div>
+
+    <section class="section-friend hide-album">
       <h3>Friends</h3>
       <div class=" container friend">
 
@@ -42,7 +60,7 @@
       </div>
     </section>
 
-    <section class="section-family">
+    <section class="section-family hide-album">
       <h3>Family</h3>
       <div class="container family">
         <img class="default-image" src="images/family_1.webp" alt="family">
@@ -54,7 +72,7 @@
     </section>
 
 
-    <section class="section-maraine">
+    <section class="section-maraine hide-album">
       <h3>Maraine</h3>
       <div class="container maraine">
         <img class="default-maraine" src="images/maraine_3.webp" alt="maraine">
@@ -73,9 +91,10 @@
     <section class="section-beyou-eliyou">
       <h3>Beyou et Eliyou</h3>
       <div class="container beyou-eliyou">
-        <img class="default-beyou-eliyou" src="images/beyou_eliyou_1.webp" alt="beyou_eliyou">
+        <img class="default-beyou-eliyou" src="images/beyou_eliyou_3.webp" alt="beyou_eliyou">
+        <img class="hide-image-animation" src="images/beyou_eliyou_1.webp" alt="beyou_eliyou">
         <img class="hide-image-animation" src="images/beyou_eliyou_2.webp" alt="beyou_eliyou">
-        <img class="hide-image-animation" src="images/beyou_eliyou_3.webp" alt="beyou_eliyou">
+
         <img class="hide-image-animation" src="images/beyou_eliyou_4.webp" alt="beyou_eliyou">
         <img class="hide-image-animation" src="images/beyou_eliyou_7.webp" alt="beyou_eliyou">
         <img class="hide-image-animation" src="images/beyou_eliyou_6.webp" alt="beyou_eliyou">
@@ -84,7 +103,7 @@
       </div>
     </section>
 
-    <section class="section-beyou">
+    <section class="section-beyou hide-album">
       <h3>Beyou</h3>
       <div class="container beyou">
         <img class="default-beyou" src="images/beyou_1.webp" alt="beyou">
@@ -94,7 +113,7 @@
       </div>
     </section>
 
-    <section class="section-eliyou">
+    <section class="section-eliyou hide-album">
       <h3>Eliyou</h3>
       <div class="container eliyou">
         <img src="images/eliyou.webp" alt="Eliyou">
@@ -103,7 +122,7 @@
     </section>
 
 
-    <section class="section-parain">
+    <section class="section-parain hide-album">
       <h3>Parain</h3>
       <div class="container parain">
         <img src="images/parain.webp" alt="parain">
@@ -112,7 +131,7 @@
     </section>
 
   </main>
-  <script src="dist/bundle.js"></script>
+  <script src="src/main.js"></script>
 </body>
 
 </html>

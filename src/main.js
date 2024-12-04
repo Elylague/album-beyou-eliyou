@@ -1,4 +1,4 @@
-import './style.css';
+//import './style.css';
 // friends
 const imagesFriend = document.querySelectorAll('section div.friend img'); 
 const boutonFriend = document.querySelector('section div.friend .bouton'); 
@@ -17,6 +17,9 @@ const boutonBeyouEliyou = document.querySelector('section div.beyou-eliyou .bout
 const imagesBeyou = document.querySelectorAll('section div.beyou img');
 const boutonBeyou = document.querySelector('section div.beyou .bouton-beyou');
 
+// les onglets de navigation 
+const onglets = document.querySelectorAll('header .container-header nav ul li a');
+const sections= document.querySelectorAll('section');
 
 boutonFriend.addEventListener('click', (event) =>{
   
@@ -183,6 +186,53 @@ console.log('my beyou')
 
 
 
-//console.log(navigator.deviceMemory)
+
+
+// section de navigation 
+
+onglets.forEach((onglet) =>{
+  
+  onglet.addEventListener('click', removeHidenClass)
+  
+} )
+
+function removeHidenClass(event){
+event.preventDefault();
+sections.forEach((section) =>{
+  
+//  section.classList.contains('hiden-album')
+  if (!section.classList.contains('hide-album')) {
+    //console.log(section)
+    section.classList.add('hide-album')
+  // console.log(section.classList)
+  }
+  
+} )
+
+
+sections.forEach((sect) =>{
+  
+  if (sect.classList.contains(event.target.dataset.section)) {
+    sect.classList.remove('hide-album')
+  }
+  
+} )
+
+onglets.forEach((ong) =>{
+  if (ong.classList.contains('active')) {
+    ong.classList.remove('active')
+    event.target.classList.add('active')
+  }
+  
+} )
+
+//event.target.classList.remove('hide-album');
+//console.log(event.target)
+
+  
+  
+}
+
+
 
 
