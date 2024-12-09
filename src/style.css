@@ -27,6 +27,7 @@ header div h1{
 
 header .container-header nav ul{
   margin: 0;
+  padding-bottom: 15px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -46,10 +47,13 @@ header .container-header nav ul li a{
 /* flexbox */
 
 section div.container {
+  
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  
+  
 
 }
 
@@ -121,6 +125,7 @@ h3 {
 }
 
 .bague{
+  width:100%;
  max-height: 275px;
  background-color: rgba(94, 101, 222, 1);
  margin: 0;
@@ -130,7 +135,8 @@ h3 {
 .bague img {
 
   width: 100%;
-  min-height: 250px;
+  max-height: inherit ;
+  object-fit: cover;
   opacity: 0.5;
   border-top-left-radius: 80px;
   border-top-right-radius: 80px;
@@ -144,9 +150,9 @@ h3 {
 section {
   
   border-radius: 10px;
-  width: 98%;
+  width: 99%;
   min-height: 700px;
-  margin: 3px;
+  margin: 2px 2px;
 
 
 
