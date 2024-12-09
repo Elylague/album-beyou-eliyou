@@ -106,7 +106,7 @@ boutonFamily.addEventListener('click', (event) => {
 
 
 // piura ma maraine
-const urlImagesMaraine = ['images/maraine_2.webp', 'images/maraine_5.webp', 'images/maraine_4.webp', '=images/maraine_1.webp']
+const urlImagesMaraine = ['images/maraine_2.webp', 'images/maraine_5.webp', 'images/maraine_4.webp', 'images/maraine_1.webp']
 let currentIndexMaraine = 0;
 const batchSizeMaraine = 2;
 
