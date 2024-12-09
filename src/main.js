@@ -24,7 +24,7 @@ const sections= document.querySelectorAll('section');
 
 //for friends
 
-const urlImagesFriends = ['/images/friend_2.webp', '/images/friend_3.webp', '/images/friend_4.webp', '/images/friend_5.webp','/images/friend_6.webp','/images/friend_7.webp','/images/friend_8.webp','/images/friend_9.webp','/images/friend_10.webp','/images/friend_11.webp','/images/friend_12.webp','/images/friend_13.webp']
+const urlImagesFriends = ['images/friend_2.webp', 'images/friend_3.webp', 'images/friend_4.webp', 'images/friend_5.webp','images/friend_6.webp','images/friend_7.webp','images/friend_8.webp','images/friend_9.webp','images/friend_10.webp','images/friend_11.webp','images/friend_12.webp','images/friend_13.webp']
 let currentIndexFriends = 0;
 const batchSizeFriends = 3;
 
@@ -106,7 +106,7 @@ boutonFamily.addEventListener('click', (event) => {
 
 
 // piura ma maraine
-const urlImagesMaraine = ['/images/maraine_2.webp', '/images/maraine_5.webp', '/images/maraine_4.webp', '/images/maraine_1.webp']
+const urlImagesMaraine = ['images/maraine_2.webp', 'images/maraine_5.webp', 'images/maraine_4.webp', '=images/maraine_1.webp']
 let currentIndexMaraine = 0;
 const batchSizeMaraine = 2;
 
@@ -170,7 +170,7 @@ event.preventDefault();
 
 // pour beyou et Eliyou
 
-const urlImagesBeyouEliyou = ['/images/beyou_eliyou_1.webp','/images/beyou_eliyou_2.webp','/images/beyou_eliyou_4.webp','/images/beyou_eliyou_7.webp','/images/beyou_eliyou_6.webp','/images/beyou_eliyou_5.webp']
+const urlImagesBeyouEliyou = ['images/beyou_eliyou_1.webp','images/beyou_eliyou_2.webp','images/beyou_eliyou_4.webp','images/beyou_eliyou_7.webp','images/beyou_eliyou_6.webp','images/beyou_eliyou_5.webp']
 let currentIndexBeyouEliyou = 0;
 const batchSizeBeyouEliyou = 3;
 
